@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ex 5</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        :root{
+            --navcolour:brown;
+            --bodycolour: wheat;
+            --hovercolour: rgb(253, 230, 230);
+        }
+
+        body {
+            background-color: var(--bodycolour);
+        }
+
+        /* Header */
+        .navbar {
+            position: sticky;
+            top: 0px;
+
+            
+            height: 70px;
+            background-color: var(--navcolour);
+            /* border: 2px solid black; */
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+
+        .logo {
+
+            color: var(--bodycolour);
+            padding: 22px;
+            display: flex;
+
+            align-items: center;
+
+        }
+        .logo:hover{
+            color: var(--hovercolour);
+        }
+
+        .nav_section {
+            position: relative;
+            left: 630px;
+
+            color: var(--bodycolour);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 15px;
+        }
+
+        .login {
+            position: relative;
+            left: 650px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .p {
+            padding: 10px;
+            margin: 5PX;
+            color: var(--navcolour);
+            background-color: var(--bodycolour);
+            border-radius: 15PX;
+        }
+        .p:hover{
+            background-color: var(--hovercolour);
+        }
+
+        /* Maim? */
+        .blocks {
+            display: flex;
+            justify-content: space-evenly;
+            height: 700px;
+            background-color: var(--bodycolour);
+        }
+
+        .block {
+            box-shadow: 10px 5px 20px;
+            position: relative;
+            top: 80px;
+            height: 600px;
+            width: 500px;
+            background-color: var(--bodycolour);
+            /* border: 2px solid black; */
+            border-radius: 30px;
+        }
+        .block:hover{
+            background-color: var(--hovercolour);
+        }
+        
+
+        h3 {
+            color: var(--navcolour);
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 20px;    
+            padding: 20px;
+        }
+
+        .welcome1 {
+            position: relative;
+            top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont {
+           padding: 100px;
+        }
+
+        /* Footer */
+        .footer{
+            padding-top: 30px;
+            color: var(--bodycolour);
+            height: 100px;
+            background-color: var(--navcolour);
+            
+        }
+        .terms{
+            display: flex;
+            justify-content: center;
+
+        }
+        .foo{
+            padding: 5px;
+            margin: 5px;
+            font-weight: 600;
+            font-size: 14px;
+
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .icon {
+            size: 30px;
+            position: fixed;
+            bottom: 0px;
+            color: green;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>CodeWithHerry</h2>
+            </div>
+            <div class="nav_section">
+                <ul>
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>Notes</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="p">Login</div>
+                <div class="p">Sign up</div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="contant">
+            <div class="blocks">
+                <div class="block block1">
+                    <h3>HTML Introduction</h3>
+                    <p>Today, I'm writing this tutorial to create a resource that will help you learn HTML in less than
+                        30 days. Here's a recommended timeline for learning HTML, based on your educational background:
+                        <br>
+                        High School students and younger: Around 25 days
+                        Those beyond High School: Around 20 days
+                        College students and above: Around 10-20 days
+                        You may be wondering why I'm discussing these timelines. It's important for me to set
+                        expectations before you start your journey of learning html with me.
+                        <br>
+                        My name is Harry (the same CodeWithHarry guy from YouTube), and today I'm writing this
+                        comprehensive HTML tutorial for all of you. Let's jump right into HTML!
+                    </p>
+                    <img src="" alt="">
+                </div>
+                <div class="block block2">
+                    <h3>(CSS)Information & History</h3>
+                    <p>Let's start this journey of learning CSS together. I'm Harry, the same guy from the CodeWithHarry
+                        YouTube channel. This tutorial will serve as a resource for students to learn CSS and use the
+                        code from these lessons as a reference.
+
+                        Without further ado, let's dive into learning CSS.</p>
+                    <H3>What is CSS?</H3>
+                    <P>CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the
+                        visual presentation of a web page written in HTML (Hypertext Markup Language).
+
+                        HTML creates the structure of the page, while CSS adds styling to that structure.</P>
+                </div>
+            </div>
+        </div>
+        <div class="welcome">
+            <h3 class="welcome1">Welcome to Web Development Course</h3>
+            <p class="cont">Welcome to MDN Learning Web Development (also known as Learn). This resource provides a
+                structured set of tutorials teaching the essential skills and practices for being a successful front-end
+                developer, along with challenges and further recommended resources.
+                <br>
+                <br>
+                Defines the essential skills and knowledge every front-end developer needs for career success and
+                industry relevance.
+                <br>
+                <br>
+
+                Created by the MDN community and refined with insights from students, educators, and developers from the
+                broader web community.
+                <br>
+                <br>
+
+                Designed to take you from "beginner" to "comfortable" (not "beginner" to "expert"), giving you enough
+                knowledge to use more advanced resources (such as the rest of MDN).
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="terms">
+                <p class="foo">Privacy</p>
+                <p class="foo">Terms</p>
+                <p class="foo" >Shop</p>
+                <p class="foo">Contact</p>
+                <p class="foo">Refund</p>
+            </div>
+            <div class="copyright">@CodeWithHerry</div>
+            <div class="icon">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
